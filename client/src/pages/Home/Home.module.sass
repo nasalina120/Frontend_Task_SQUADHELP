@@ -289,8 +289,15 @@
 .greyContainer
   @include innerContainer
   background-color: #FAFAFA
+.heroSectionContainer
+  @include innerContainer
+  text-align: center
+  overflow-x: hidden
 
 
+.firstNamingPlatformContainer
+  @include innerContainer
+  
 .whiteContainer
   @include innerContainer
   background-color: white
@@ -411,3 +418,26 @@
     background-color: #28D2D1
 
 
+.blueLine 
+  align-items: center
+  box-sizing: border-box
+  width: 100%
+  display: flex
+  justify-content: space-between
+  gap: 24px
+  padding: 36px 40px
+  color: white
+  background: #008cff 
+  background: linear-gradient(90deg, rgba(0, 140, 255, 0.62) 0%, rgba(9, 9, 121, 1) 100%) 
+  @media screen and (max-width: 850px) 
+      flex-direction: column
+      align-items: start
+   
+
+.startBtn
+  cursor: pointer
+  flex-shrink: 0 
+  white-space: nowrap
+  padding: 10px
+  background-color: white
+ 

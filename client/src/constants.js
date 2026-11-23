@@ -34,6 +34,9 @@ export default {
     REGISTER: 'REGISTER',
     LOGIN: 'LOGIN',
   },
+  COMPANY_CONTACTS: {
+    TEL_NUMBER: '(877)-355-3585',
+  },
   HEADER_ANIMATION_TEXT: [
     'a Company',
     'a Brand',

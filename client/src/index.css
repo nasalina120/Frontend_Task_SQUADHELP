@@ -113,7 +113,8 @@ section {
 }
 
 body {
-  line-height: 1;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ol,
@@ -458,4 +459,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a {
+  text-decoration: none;
 }
