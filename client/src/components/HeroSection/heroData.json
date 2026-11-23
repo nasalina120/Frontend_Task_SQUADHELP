@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Popular Brandable Domains",
+    "iconClass": "far fa-star",
+    "badgeText": null,
+    "bgColor": "#f4f3f1"
+  },
+  {
+    "id": 2,
+    "title": "Short Domains",
+    "iconClass": "fas fa-link",
+    "badgeText": null,
+    "bgColor": "#fce7e2"
+  },
+  {
+    "id": 3,
+    "title": "3 Letter Domains",
+    "iconClass": null,
+    "badgeText": "3",
+    "bgColor": "#e7f4f7"
+  },
+  {
+    "id": 4,
+    "title": "4 Letter Domains",
+    "iconClass": null,
+    "badgeText": "4",
+    "bgColor": "#e7f4f7"
+  },
+  {
+    "id": 5,
+    "title": "5 Letter Domains",
+    "iconClass": null,
+    "badgeText": "5",
+    "bgColor": "#e9f2e4"
+  },
+  {
+    "id": 6,
+    "title": "One Word Domains",
+    "iconClass": "fas fa-globe",
+    "badgeText": null,
+    "bgColor": "#f6f0e4"
+  },
+  {
+    "id": 7,
+    "title": "Ultra Premium Domains",
+    "iconClass": "fas fa-crown",
+    "badgeText": null,
+    "bgColor": "#fce7e2"
+  },
+  {
+    "id": 8,
+    "title": "On Sale",
+    "iconClass": "fas fa-tag",
+    "badgeText": null,
+    "bgColor": "#f4f3f1"
+  }
+]

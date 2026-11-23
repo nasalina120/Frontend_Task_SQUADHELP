@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaRegLightbulb } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Header from '../../components/Header/Header';
@@ -8,6 +9,10 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import firstNamingPlatformCards from './firstNamingPlatform.json';
+
+import FirstNamingPlatformList from './FirstNamingPlatform/FirstNamingPlatformList';
+import HeroSection from '../../components/HeroSection/HeroSection.jsx';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -30,6 +35,7 @@ const Home = props => {
     CONSTANTS.HEADER_ANIMATION_TEXT[
       index % CONSTANTS.HEADER_ANIMATION_TEXT.length
     ];
+
   return (
     <>
       <Header />
@@ -55,11 +61,17 @@ const Home = props => {
                 </Link>
               </div>
             </div>
+            <div className={styles.heroSectionContainer}>
+              <HeroSection />
+            </div>
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
               />
+            </div>
+            <div className={styles.firstNamingPlatformContainer}>
+              <FirstNamingPlatformList />
             </div>
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
@@ -248,6 +260,15 @@ const Home = props => {
             <div className={styles.button}>
               <Link className={styles.button__link} to='/dashboard'>
                 DASHBOARD
+              </Link>
+            </div>
+            <div className={styles.blueLine}>
+              <p>
+                Ready to get started? Launch a contest and start receiving
+                submissions instantly.
+              </p>
+              <Link to='/startContest' className={styles.startBtn}>
+                <FaRegLightbulb /> Start A Contest
               </Link>
             </div>
             <div className={styles.blueContainer}>
